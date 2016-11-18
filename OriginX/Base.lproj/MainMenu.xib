@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="OriginX" customModuleProvider="target">
+            <connections>
+                <outlet property="quitClicked" destination="x40-DX-lNT" id="sEe-tO-RUR"/>
+                <outlet property="statusMenu" destination="Yd6-u6-asU" id="hai-yb-TeR"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="Yd6-u6-asU">
+            <items>
+                <menuItem title="Start OpenShift" id="rRf-nB-1KR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Stop OpenShift" id="jWB-HF-7rO">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="fO5-bB-2pQ"/>
+                <menuItem title="Fetch Version" id="8UW-15-YDT">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Fetch Version" id="1xR-iA-Qne">
+                        <items>
+                            <menuItem title="Latest Alpha" id="6bI-oo-BAS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Latest Stable" id="mpo-2e-FiM">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="11j-v4-7Xp"/>
+                <menuItem title="Options" id="O14-gb-41h">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Options" id="gHF-R8-2bh">
+                        <items>
+                            <menuItem title="Item" id="lcg-ZN-ctv">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="1OS-zi-jg2"/>
+                <menuItem title="Quit" id="x40-DX-lNT">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="Voe-Tx-rLC" id="4kj-BV-Szo"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="UiN-vQ-tdU"/>
+                <menuItem title="About" id="3vP-CF-iR3">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-32" y="-61"/>
+        </menu>
+    </objects>
+</document>
