@@ -44,13 +44,9 @@
                 <menuItem isSeparatorItem="YES" id="11j-v4-7Xp"/>
                 <menuItem title="Options" id="O14-gb-41h">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Options" id="gHF-R8-2bh">
-                        <items>
-                            <menuItem title="Item" id="lcg-ZN-ctv">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                            </menuItem>
-                        </items>
-                    </menu>
+                    <connections>
+                        <action selector="prefWindow:" target="Voe-Tx-rLC" id="77f-Yu-ihu"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="1OS-zi-jg2"/>
                 <menuItem title="Quit" id="x40-DX-lNT">

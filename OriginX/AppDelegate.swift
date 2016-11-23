@@ -11,6 +11,9 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    @IBAction func prefWindow(_ sender: Any) {
+        
+    }
     @IBOutlet weak var statusMenu: NSMenu!
     let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
@@ -25,9 +28,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        // This will have to handle the termination of the application
     }
-
-
 }
+
+// originServer is the structure that holds origin server defaults.
+struct originServer {
+    var logLevel = 0
+    var env = ""
+    var image = ""
+    var createMachine = false
+    var machineName = ""
+}
+
 
